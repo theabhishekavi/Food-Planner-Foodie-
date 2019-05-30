@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="25dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="30dp"
+    android:background="@color/colorPrimaryDark">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Food Planner Header"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food-Planner"/>
+
+</LinearLayout>
