@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener
                 (new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                drawerLayout.closeDrawers();
-                menuItem.setChecked(true);
-                return true;
-            }
-        });
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                        drawerLayout.closeDrawers();
+                        menuItem.setChecked(true);
+                        return true;
+                    }
+                });
     }
 }

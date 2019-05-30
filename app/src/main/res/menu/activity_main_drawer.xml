@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <item android:title="FOODIE">
+    <item android:title="Health Calculator">
         <menu>
             <item
                 android:id="@+id/nav_bmr"
@@ -13,17 +13,21 @@
                 android:icon="@drawable/ic_launcher_background"
                 android:title="BMI" />
             <item
-                android:id="@+id/nav_diet_routine"
-                android:icon="@drawable/ic_launcher_background"
-                android:title="Diet Routine"/>
-            <item
                 android:id="@+id/nav_body_fat"
                 android:icon="@drawable/ic_launcher_background"
-                android:title="Body Fat Percentage" />
+                android:title="BFP" />
+        </menu>
+    </item>
+    <item android:title="Diet Planner">
+        <menu>
             <item
-                android:id="@+id/nav_loose_gain"
+                android:id="@+id/nav_daily_food_intake"
                 android:icon="@drawable/ic_launcher_background"
-                android:title="LOOSE WEIGHT/GAIN WEIGHT" />
+                android:title="Daily Food Intake"/>
+            <item
+                android:id="@+id/nav_your_motive"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Whats Your Motive" />
         </menu>
     </item>
 </menu>
