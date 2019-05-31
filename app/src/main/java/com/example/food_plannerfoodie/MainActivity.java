@@ -2,6 +2,7 @@ package com.example.food_plannerfoodie;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -39,7 +40,27 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                         drawerLayout.closeDrawers();
-                        menuItem.setChecked(true);
+                        Fragment fragment = new HomeFragment();
+                        switch (menuItem.getItemId()) {
+                            case R.id.nav_bmi:
+                                fragment = new BMIFragment();
+                                break;
+                            case R.id.nav_bmr:
+                                fragment = new BMRFragment();
+                                break;
+                            case R.id.nav_body_fat:
+                                fragment = new BFPFragment();
+                                break;
+                            case R.id.nav_daily_food_intake:
+                                fragment = new DailyFoodIntakeFragment();
+                                break;
+                            case R.id.nav_your_motive:
+                                fragment = new WhatsYourMotiveFragment();
+                                break;
+                        }
+                        FragmentManager fragmentManager1 = getSupportFragmentManager();
+                        fragmentManager1.beginTransaction().replace(R.id.content_frame,fragment)
+                                .addToBackStack(null).commit();
                         return true;
                     }
                 });
