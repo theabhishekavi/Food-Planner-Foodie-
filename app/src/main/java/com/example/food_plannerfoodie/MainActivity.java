@@ -8,10 +8,15 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
+
+import com.example.food_plannerfoodie.Fragment.BFPFragment;
+import com.example.food_plannerfoodie.Fragment.BMIFragment;
+import com.example.food_plannerfoodie.Fragment.BMRFragment;
+import com.example.food_plannerfoodie.Fragment.DailyFoodIntakeFragment;
+import com.example.food_plannerfoodie.Fragment.HomeFragment;
+import com.example.food_plannerfoodie.Fragment.WhatsYourMotiveFragment;
 
 public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
