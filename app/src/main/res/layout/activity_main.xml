@@ -23,9 +23,10 @@
            app:title="@string/app_name">
        </android.support.v7.widget.Toolbar>
 
-        <include layout="@layout/home_layout"
+        <FrameLayout
+            android:id="@+id/content_frame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
    </LinearLayout>
     <android.support.design.widget.NavigationView
@@ -35,7 +36,7 @@
         android:layout_gravity="start"
         android:paddingTop="20dp"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/header_drawer"
-        app:menu="@menu/activity_main_drawer"/>
+        app:headerLayout="@layout/nav_header_drawer"
+        app:menu="@menu/nav_menu_drawer"/>
 
 </android.support.v4.widget.DrawerLayout>

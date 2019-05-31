@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="200dp"
-            android:focusableInTouchMode="true"
+            android:id="@+id/cardview_daily_food_intake"
             app:cardCornerRadius="5dp"
             android:background="@color/cardview_shadow_end_color"
             android:layout_margin="@dimen/cardview_default_radius">
@@ -53,7 +53,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="200dp"
-            android:focusableInTouchMode="true"
+            android:id="@+id/cardview_whats_your_motive"
             app:cardCornerRadius="5dp"
             android:background="@color/cardview_shadow_end_color"
             android:layout_margin="@dimen/cardview_default_radius">
@@ -93,7 +93,7 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="200dp"
-        android:focusableInTouchMode="true"
+        android:id="@+id/cardview_bmr"
         app:cardCornerRadius="5dp"
         android:background="@color/cardview_shadow_end_color"
         android:layout_margin="@dimen/cardview_default_radius">
@@ -118,7 +118,7 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="200dp"
-        android:focusableInTouchMode="true"
+        android:id="@+id/cardview_bmi"
         app:cardCornerRadius="5dp"
         android:background="@color/cardview_shadow_end_color"
         android:layout_margin="@dimen/cardview_default_radius">
@@ -148,7 +148,7 @@
         <android.support.v7.widget.CardView
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:focusableInTouchMode="true"
+            android:id="@+id/cardview_bfp"
             app:cardCornerRadius="5dp"
             android:background="@color/cardview_shadow_end_color"
             android:layout_margin="@dimen/cardview_default_radius">
