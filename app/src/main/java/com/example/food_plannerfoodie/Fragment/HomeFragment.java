@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.food_plannerfoodie.BasicUserDetailsFragment;
 import com.example.food_plannerfoodie.R;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
@@ -56,7 +57,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 fragment = new DailyFoodIntakeFragment();
                 break;
             case R.id.cardview_whats_your_motive:
-                fragment = new WhatsYourMotiveFragment();
+                fragment = new BasicUserDetailsFragment();
                 break;
         }
         fragmentManager.beginTransaction().replace(R.id.content_frame,
